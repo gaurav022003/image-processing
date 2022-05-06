@@ -20,11 +20,11 @@ for i in (glob.glob("input/*.jpg") or glob.glob("input/*.png") or glob.glob("inp
     fname =fname.split("\\")[1]
     print(fname)
     if img.mode =='RGB':
-        img.save('C:/learn/image processing/rgb/{}.jpg'.format(fname))
+#         img.save('C:/learn/image processing/rgb/{}.jpg'.format(fname))
         img.resize(s).convert(mode='L').save("C:/learn/image processing/output/{}.jpg".format(fname))
     elif(img.mode=='L'):
-        img.save('C:/learn/image processing/black and white/{}.jpg'.format(fname))
+#         img.save('C:/learn/image processing/black and white/{}.jpg'.format(fname))
         img.resize(s).save("C:/learn/image processing/output/{}.jpg".format(fname))
     else:
-        img.save('C:/learn/image processing/none/{}.jpg'.format(fname))
+#         img.save('C:/learn/image processing/none/{}.jpg'.format(fname))
         img.resize(s).convert(mode='L').save("C:/learn/image processing/output/{}.jpg".format(fname))
